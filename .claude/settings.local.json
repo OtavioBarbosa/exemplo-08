@@ -1,0 +1,26 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm -v)",
+      "mcp__context7__resolve-library-id",
+      "Bash(sed 's/=.*/=<redacted>/' .env && ls .claude)",
+      "mcp__context7__query-docs",
+      "Bash(npm view *)",
+      "Bash(npm install *)",
+      "Bash(npm install-scripts *)",
+      "Bash(npm rebuild *)",
+      "Bash(node -e \"const D=require\\('better-sqlite3'\\); new D\\(':memory:'\\); console.log\\('better-sqlite3 OK'\\)\")",
+      "Bash(ls node_modules/better-sqlite3/build/Release/*.node node_modules/better-sqlite3/prebuilds 2>&1 | head; grep -E \"gyp ERR! \\(stack|cwd\\)|error:\" /home/otavio/.npm/_logs/2026-11-09T23_39_00_137Z-debug-0.log | head -8)",
+      "Read(//home/otavio/.npm/_logs/**)",
+      "Bash(node -e \"const D=require\\('better-sqlite3'\\);const d=new D\\('./better-auth.sqlite'\\);console.log\\(d.prepare\\(\\\\\"select name from sqlite_master where type='table'\\\\\"\\).all\\(\\).map\\(r=>r.name\\)\\)\")",
+      "Bash(npm run *)",
+      "Bash(npx tsc *)"
+    ],
+    "additionalDirectories": [
+      "/home/otavio/university-unipds/exemplo-08"
+    ]
+  },
+  "enabledMcpjsonServers": [
+    "context7"
+  ]
+}
